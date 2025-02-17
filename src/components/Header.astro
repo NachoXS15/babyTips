@@ -3,17 +3,17 @@ import { Image } from "astro:assets";
 import logo from '../assets/img/logo.png'
 ---
 
-<header class="w-full h-20 my-5 flex items-center justify-around" style="font-family: Cabin;">
+<header class="w-full h-20 my-5 flex items-center justify-between px-10 lg:justify-around" style="font-family: Cabin;">
     <div class="flex items-center gap-2">
         <Image src={logo} width={80} height={80} alt="logo" />
         <p class="text-2xl text-slate-700 font-semibold">Baby Tips</p>
     </div>
-    <nav aria-hidden class="hidden lg:flex gap-2">
-        <a href="" class="text-xl text-slate-700">¿Qué ofrecemos?</a>
-        <a href="" class="text-xl text-slate-700">¿De qué trata?</a>
-        <a href="" class="text-xl text-slate-700">¿Qué aprenderás?</a>
-        <a href="" class="text-xl text-slate-700">Testimonios</a>
-        <a href="" class="text-xl text-slate-700">Biografia</a>
+    <nav aria-hidden class="hidden lg:flex gap-3">
+        <a href="#" class="text-xl text-slate-700">¿Qué ofrecemos?</a>
+        <a href="#" class="text-xl text-slate-700">¿De qué trata?</a>
+        <a href="#" class="text-xl text-slate-700">¿Qué aprenderás?</a>
+        <a href="#" class="text-xl text-slate-700">Testimonios</a>
+        <a href="#" class="text-xl text-slate-700">Biografia</a>
     </nav>
     <button id="menu-button"
       data-collapse-toggle="navbar-sticky"
