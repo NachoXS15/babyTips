@@ -1,0 +1,95 @@
+
+<section class="w-full flex items-center mt-20 justify-center flex-col">
+    <div class="w-4/6">
+        <div data-accordion="1" class="border-b border-slate-200">
+            <button  class="w-full flex justify-between items-center py-5 text-slate-800">
+                <span>Modulo 1</span>
+                <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+            </button>
+            <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <ul class="pb-5 text-sm text-slate-500">
+                    <li>Video 1 - ¡Bienvenidos!</li>
+                    <li>Video 2 - Alimentación Complementaria.</li>
+                    <li>Video 3 - Resumen del Programa.</li>
+                </ul>
+            </div>
+        </div>
+        <div data-accordion="2" class="border-b border-slate-200">
+            <button class="w-full flex justify-between items-center py-5 text-slate-800">
+                <span>Modulo 1</span>
+                <span id="icon-2" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+            </button>
+            <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <ul class="pb-5 text-sm text-slate-500">
+                    <li>Video 1 - ¿Cuándo puedo iniciar la Alimentación Complementaria?</li>
+                    <li>Video 2 - Papel de la Leche Materna y Leche de fórmula.</li>
+                    <li>Video 3 - Recomendaciones cuando inicias la AC.</li>
+                    <li>Video 4 - Acciones a aplicar si tu bebé no muestra interés en comer.</li>
+                </ul>
+            </div>
+        </div>
+        <div data-accordion="3" class="border-b border-slate-200">
+            <button class="w-full flex justify-between items-center py-5 text-slate-800">
+                <span>Modulo 1</span>
+                <span id="icon-3" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+            </button>
+            <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <ul class="pb-5 text-sm text-slate-500">
+                    <li>Video 1 - ¿Cómo se si mi bebé come suficiente?</li>
+                    <li>Video 2 - Cantidades y Frecuencias.</li>
+                    <li>Video 3 - Atoramiento y Ahogamiento.</li>
+                    <li>Video 4 - Manejo de Alergias.</li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        function toggleAccordion(index: number): void {
+            const content = document.getElementById(`content-${index}`) as HTMLElement | null;
+            const icon = document.getElementById(`icon-${index}`) as HTMLElement | null;
+
+            if (!content || !icon) return;
+
+            // SVGs
+            const minusSVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+            </svg>`;
+
+            const plusSVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+            </svg>`;
+
+            if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+                content.style.maxHeight = "0";
+                icon.innerHTML = plusSVG;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.innerHTML = minusSVG;
+            }
+        }
+
+        document.querySelectorAll<HTMLButtonElement>("[data-accordion]").forEach((button) => {
+            button.addEventListener("click", function () {
+                    const index = this.dataset.accordion;
+                    if (index) {
+                        toggleAccordion(parseInt(index, 10))
+                    }
+                });
+        });
+});
+</script>
