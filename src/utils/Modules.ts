@@ -22,7 +22,33 @@ const ModulesInfo = [
             "Video 1 - ¿Cómo se si mi bebé come suficiente?",
             "Video 2 - Cantidades y Frecuencias",
             "Video 3 - Atoramiento y Ahogamiento",
-            "Video 3 - Manejo de Alergias",
+            "Video 4 - Manejo de Alergias",
+        ]
+    },
+    {
+        id: 4,
+        moduleInfo: [
+            "Video 1 - Guía de Alimentos Prohibidos",
+            "Video 2 - Agus y otras bebidas",
+            "Video 3 - Nutrición por grupos de alimentos",
+            "Video 4 - Sal y Azúcar",
+            "Video 5 - Vegetarianismo",
+        ]
+    },
+    {
+        id: 5,
+        moduleInfo: [
+            "Video 1 - Menú para las primeras 4 semanas",
+            "Video 2 - Pongamos manos a la obra",
+            "Video 3 - Cortar y cocinar verduras al vapor",
+        ]
+    },
+    {
+        id: 6,
+        moduleInfo: [
+            "Video 1 - Preguntas Frecuentes",
+            "Video 2 - ¿Cómo preparar recetas tanto básicas como avanzadas",
+            "Video 3 - Tutoriales",
         ]
     },
 ]
