@@ -3,17 +3,17 @@ import { Image } from "astro:assets";
 import logo from '../assets/img/logo.png'
 ---
 
-<header class="w-full h-20 my-5 flex items-center justify-between px-10 lg:justify-around" style="font-family: Cabin;">
+<header class="w-full h-20 my-5 flex items-center justify-between px-5 md:px-10 lg:justify-around" style="font-family: Cabin;">
     <div class="flex items-center gap-2">
-        <Image src={logo} width={80} height={80} alt="logo" />
+        <Image src={logo} width={80} height={80}  alt="logo" />
         <p class="text-2xl text-slate-700 font-semibold">Baby Tips</p>
     </div>
-    <nav aria-hidden class="hidden lg:flex gap-3">
-        <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">¿Qué ofrecemos?</a>
-        <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">¿De qué trata?</a>
-        <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">¿Qué aprenderás?</a>
-        <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">Testimonios</a>
-        <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">Biografia</a>
+    <nav aria-hidden class="hidden lg:flex gap-4">
+        <a href="#info" class="text-xl text-slate-700 hover:scale-105 transition">¿Qué aprenderás?</a>
+        <a href="#modules" class="text-xl text-slate-700 hover:scale-105 transition">Contenido</a>
+        <a href="#tests" class="text-xl text-slate-700 hover:scale-105 transition">Testimonios</a>
+        <a href="#bio" class="text-xl text-slate-700 hover:scale-105 transition">Biografia</a>
+        <a href="#contact" class="text-xl text-slate-700 hover:scale-105 transition">Contacto</a>
     </nav>
     <button id="menu-button"
       data-collapse-toggle="navbar-sticky"
@@ -44,11 +44,11 @@ import logo from '../assets/img/logo.png'
 <div class={`hidden lg:hidden w-full bg-semi-black absolute top-30 bg-teal-50 border z-50`} id="menu-open">
     <div class="w-full bg-semi-black bg-opacity-20 h-fit z-50">
         <nav class="w-full flex flex-col gap-4 p-5 font-medium">
-            <a href="" class="text-xl text-slate-700">¿Qué ofrecemos?</a>
-            <a href="" class="text-xl text-slate-700">¿De qué trata?</a>
-            <a href="" class="text-xl text-slate-700">¿Qué aprenderás?</a>
-            <a href="" class="text-xl text-slate-700">Testimonios</a>
-            <a href="" class="text-xl text-slate-700">Biografia</a>
+            <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">¿Qué aprenderás?</a>
+            <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">Testimonios</a>
+            <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">Contenido</a>
+            <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">Biografia</a>
+            <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">Contacto</a>
         </nav>
     </div>
 </div>
