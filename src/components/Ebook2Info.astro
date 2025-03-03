@@ -4,8 +4,8 @@ import portada2 from '../assets/img/portada2.webp'
 ---
 
 <main class="w-full flex items-center justify-center mt-10" style="font-family: Cabin;">
-    <div class="w-full md:w-5/6 lg:w-3/4 xl:w-1/2 px-5 flex justify-center items-center text-center md:text-start flex-col md:flex-row gap-4">
-        <Image src={portada2} class="w-full m-auto md:w-1/2 lg:w-1/2 h-fit"  alt="" />
+    <div class="w-full md:w-5/6 lg:w-3/4 xl:w-1/2 px-5 flex justify-center items-center text-center md:text-start flex-col md:flex-row gap-5">
+        <Image src={portada2} class="w-full m-auto md:w-1/2 lg:w-1/2 h-fit rounded"  alt="" />
         <div class="flex flex-col items-center lg:items-start mt-8 md:mt-0">
             <h3 class="text-teal-700 text-3xl font-bold">E-book -  Guía de Alimentación para Bebés</h3>
             <hr class="w-3/4 mt-2 mb-5 border border-teal-500" />
@@ -26,6 +26,83 @@ import portada2 from '../assets/img/portada2.webp'
         </div>
     </div>
 </main>
-<section>
-    
+<div class="w-full flex items-center justify-center mt-10">
+    <div class="md:w-5/6 lg:w-3/4 xl:w-1/2 px-5 flex justify-center items-center text-center flex-col">
+        <h2 class="text-teal-700 font-semibold text-3xl">¿Qué aprenderás?</h2>
+        <hr class="w-full border m-auto my-5">
+    </div>
+</div>
+<section class="w-full flex items-center justify-center my-5" style="font-family: Cabin;">
+    <div class="w-full md:w-5/6 lg:w-3/4 xl:w-1/2 px-5 flex justify-center items-center text-center flex-col">
+        <h2 class="text-teal-700 font-semibold text-2xl">Beneficios de Comprar la Guía de Alimentación para Bebés</h2>
+        <ul class="w-full self-start">
+            <li class="text-xl text-start flex gap-2 self-center my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#00786f" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                </svg>
+                <span><strong> Nutrición Completa</strong>: Descubre cómo ofrecerle una dieta equilibrada y saludable a tu bebé desde sus primeros alimentos</span>.
+            </li>
+            <li class="text-xl text-start flex gap-2 self-center my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#00786f" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                </svg>
+                <span><strong>Evita Problemas Digestivos:</strong>: Aprende qué alimentos son adecuados para cada etapa de su desarrollo y cómo prevenir malestares comunes.</span>
+            </li>
+            <li class="text-xl text-start flex gap-2 self-center my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#00786f" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                </svg>
+                <span><strong>Recetas Fáciles y Nutritivas</strong>: Accede a una amplia variedad de recetas caseras, diseñadas para aportar los nutrientes necesarios.</span>
+            </li>
+            <li class="text-xl text-start flex gap-2 self-center my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#00786f" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                </svg>
+                <span><strong>Guía para Introducir Nuevos Alimentos</strong>: Conoce el momento adecuado para cada tipo de alimento y evita posibles alergias alimentarias.</span>
+            </li>
+            <li class="text-xl text-start flex gap-2 self-center my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#00786f" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                </svg>
+                <span><strong>Apoyo Exclusivo</strong>: Obtén acceso a una comunidad de padres con los mismos intereses para resolver dudas y compartir experiencias.</span>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="w-full flex items-center justify-center my-5" style="font-family: Cabin;">
+    <div class="w-full md:w-5/6 lg:w-3/4 xl:w-1/2 px-5 flex justify-center items-center text-center flex-col">
+        <h2 class="text-red-500 font-semibold text-2xl">Algunos Errores Comunes en la Alimentación de Bebés que Debes Evitar</h2>
+        <ul class="w-full self-start">
+            <li class="text-xl text-start flex gap-2 self-center my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="red" class="bi bi-x-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                </svg>
+                <span><strong>Introducir alimentos sólidos demasiado temprano</strong>: Puede afectar su sistema digestivo y causar problemas a largo plazo.</span>
+            </li>
+            <li class="text-xl text-start flex gap-2 self-center my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="red" class="bi bi-x-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                </svg>
+                <span><strong>Agregar sal o azúcar a las comidas</strong>: Esto puede sobrecargar los riñones del bebé y crear malos hábitos alimenticios.</span>
+            </li>
+            <li class="text-xl text-start flex gap-2 self-center my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="red" class="bi bi-x-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                </svg>
+                <span><strong>Forzar al bebé a comer</strong>: El apetito de un bebé puede variar, forzarlo solo generará aversión hacia ciertos alimentos.</span>
+            </li>
+            <li class="text-xl text-start flex gap-2 self-center my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="red" class="bi bi-x-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                </svg>
+                <span><strong>No prestar atención a posibles alergias</strong>: Introducir ciertos alimentos sin cuidado puede desencadenar reacciones alérgicas.</span>
+            </li>
+            <li class="text-xl text-start flex gap-2 self-center my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="red" class="bi bi-x-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                </svg>
+                <span><strong>Dar jugos en exceso</strong>: Los jugos, incluso los naturales, contienen azúcar y pueden reemplazar nutrientes importantes de alimentos sólidos.</span>
+            </li>
+        </ul>
+    </div>
 </section>
