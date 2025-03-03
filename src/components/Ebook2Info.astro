@@ -1,0 +1,31 @@
+---
+import Image from "astro/components/Image.astro";
+import portada2 from '../assets/img/portada2.webp'
+---
+
+<main class="w-full flex items-center justify-center mt-10" style="font-family: Cabin;">
+    <div class="w-full md:w-5/6 lg:w-3/4 xl:w-1/2 px-5 flex justify-center items-center text-center md:text-start flex-col md:flex-row gap-4">
+        <Image src={portada2} class="w-full m-auto md:w-1/2 lg:w-1/2 h-fit"  alt="" />
+        <div class="flex flex-col items-center lg:items-start mt-8 md:mt-0">
+            <h3 class="text-teal-700 text-3xl font-bold">E-book -  Guía de Alimentación para Bebés</h3>
+            <hr class="w-3/4 mt-2 mb-5 border border-teal-500" />
+            <p>Este ebook es tu aliado perfecto para garantizar una nutrición equilibrada y saludable para tu pequeño. Aquí encontrarás desde recomendaciones prácticas para introducir nuevos alimentos, hasta recetas deliciosas y nutritivas que ayudarán a tu bebé a crecer fuerte y saludable. 🌱👶
+           </p>
+           <div class="mt-10">
+               <p class="text-teal-700 text-4xl font-bold">U$D 15.99</p>
+                <span>(El precio se regionalizará al momento de compra)</span>
+           </div>
+           
+           <a href="https://pay.hotmart.com/W95664215C" target="_blank" class="text-center mt-10 bg-teal-700 text-white text-xl w-fit px-10 h-14 rounded-lg flex justify-center items-center gap-1 hover:scale-105 active:scale-105 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg>
+                Comprar
+           </a>
+        </div>
+    </div>
+</main>
+<section>
+    
+</section>
