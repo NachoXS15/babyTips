@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets'
+import wsp from '../assets/img/whatsapp.png'
+---
+<article class="fixed bottom-8 right-5 md:right-10 flex items-center gap-3">
+    <div class="group transition relative flex items-center gap-3">
+        <span class="hidden group-hover:inline transition text-end bg-green-300 px-3 py-2 rounded">
+            ¿Necesitas ayuda? <br> ¡Envíame un mensaje!
+        </span>
+        <a href="https://wa.link/hy01dy" target="_blank" class="hover:scale-110 transition">
+            <Image src={wsp} class="w-20" alt="">
+        </a>
+    </div>
+</article>
