@@ -4,20 +4,27 @@ import Layout from "../layouts/Layout.astro";
 import Books from '../assets/img/books.png'
 import ChefHat from '../assets/img/chef_hat.png'
 import Start from '../assets/img/start_chef.png'
+import logo from '../assets/img/logo.png'
+import Autora from '../assets/img/autora.png'
 ---
 
 <Layout>
-    <section class="w-full min-h-screen bg-orange-100 flex items-center justify-center">
-        <div class="w-4/6 flex">
-            <div class="w-1/2">
-                
+    <section class="w-full py-10 md:py-0 min-h-screen bg-orange-100 flex items-center justify-center">
+        <div class="w-full px-10 md:w-4/6 flex flex-col md:flex-row gap-10">
+            <div class="w-full md:w-1/2">
+                <Image src={logo} width={150} alt="asd" />
+                <h2 class="text-9xl text-amber-900 uppercase">Baby Tips</h2>
+                <p style="font-family: 'urbana'" class="text-6xl text-amber-900" >Mamá de Gio</p>
+                <p class="text-4xl roboto text-amber-900 font-bold">(+DE 250 RECETAS)</p>
+                <p class="mt-10 mb-15 text-amber-900 text-2xl font-bold">Descubre el método BLW y aprende cómo iniciar la alimentación complementaria de manera segura y efectiva para tu bebé.</p>
+                <a href="" style="font-family: 'urbana'" class="mt-20 tracking-wider text-4xl md:text-6xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</a>
             </div>
-            <div class="w-1/2">
+            <div class="w-full md:w-1/2">
                 <Image src={Start} alt="asd"/>
             </div>
         </div>
     </section>
-    <section class="w-full min-h-fit py-20 flex items-center justify-center gap-5 flex-col" style="background-color: #7a90af;">
+    <section class="w-full min-h-fit py-20 flex items-center justify-center px-10 gap-10 flex-col" style="background-color: #7a90af;">
         <h2 class="text-6xl font-bold text-yellow-200">Antes de continuar, responde estas preguntas:</h2>
         <ul class="text-xl flex flex-col gap-5 text-white font-bold">
             <li>¿Estás buscando una forma de introducir alimentos sólidos a tu bebé de manera segura y sin estrés?</li>
@@ -31,9 +38,9 @@ import Start from '../assets/img/start_chef.png'
             <li>¿Estás cansado de lidiar con purés y cucharas, buscando una opción más natural y menos complicada?</li>
         </ul>
     </section>
-    <section class="w-full min-h-fit py-20 bg-orange-100 flex items-center justify-center flex-col gap-7">
+    <section class="w-full px-10 min-h-fit py-20 bg-orange-100 flex items-center justify-center flex-col gap-7">
         <h2 class="text-5xl font-bold uppercase text-amber-900">¿Qué aprenderás?</h2>
-        <nav class="w-4/6 flex flex-col gap-4">
+        <nav class="w-full md:w-4/6 flex flex-col gap-4">
             <div class="flex items-center gap-6">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="#a45d83" class="size-20">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -66,17 +73,25 @@ import Start from '../assets/img/start_chef.png'
             </div>
         </nav>
     </section>
-    <section class="w-full min-h-[600px] py-20 bg-pink-200">
-
+    <section class="w-full min-h-fit py-20 bg-pink-200 flex items-center justify-center">
+        <div class="w-full md:w-4/6 px-5 flex items-center justify-center flex-col md:flex-row gap-20">
+            <Image src={Autora} class="w-96" alt="" />
+            <div class="w-full md:w-1/2">
+                <h2 class="text-amber-900 text-6xl mb-10">Hola, soy Aracely Upiachihua</h2>
+                <p class="text-amber-900 text-xl mb-10">Mamá y autora de "Chef Mom: Mamá de Gio".</p>
+                <p class="text-amber-900 text-xl mb-10">Como madre primeriza, decidí sumergirme en el mundo de la alimentación complementaria con el deseo de proporcionar a mi bebé una experiencia nutritiva y segura desde el principio. Esta decisión me llevó a estudiar y prepararme a fondo, asegurándome de estar equipada para guiar a mi hija en esta emocionante etapa sin temor ni incertidumbre.</p>
+                <p class="text-amber-900 text-xl">Mi pasión y mi propósito se unen en esta guía, donde comparto todo lo que aprendí en mi viaje como madre y en mi investigación sobre el método BLW. Mi objetivo es brindar apoyo y orientación a mamás y papás que desean iniciar la alimentación complementaria de sus bebés de manera segura y confiada, utilizando el enfoque del BLW.</p>
+            </div>
+        </div>
     </section>
-    <section class="w-fill min-h-fit py-20 bg-orange-100 flex items-center justify-center flex-col">
-        <div class="w-4/6 flex gap-10">
-            <article class="w-1/2 flex justify-center items-center flex-col">
-                <h2 class="text-5xl text-center text-amber-900 font-bold uppercase">¿QUÉ INCLUYE EN ESTE MEGAPACK DE CURSOS?</h2>
+    <section class="w-full px-10 min-h-fit py-20 bg-orange-100 flex items-center justify-center flex-col">
+        <div class="w-full md:w-4/6 flex flex-col md:flex-row gap-10">
+            <article class="w-full md:w-1/2 flex justify-center items-center flex-col">
+                <h2 class="text-4xl flex items-center justify-center text-amber-900 font-bold uppercase" text-center>¿QUÉ INCLUYE EN ESTE MEGAPACK DE CURSOS?</h2>
                 <Image src={Books} alt="libros" />
-                <a href="" class="text-6xl text-yellow-100 bg-pink-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</a>
+                <a href="" style="font-family: 'urbana'" class="text-4xl md:text-6xl text-yellow-100 bg-pink-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</a>
             </article>
-            <article class="flex flex-col justify-between">
+            <article class="flex flex-col gap-10 md:gap-0 justify-between">
                 <div class="flex items-center gap-5">
                     <Image src={ChefHat} class="w-15" alt="asd" />
                     <p class="text-2xl font-bold text-amber-900">+250 recetas (desayuno, almuerzo, merienda, cena, snack)</p>
@@ -107,7 +122,12 @@ import Start from '../assets/img/start_chef.png'
             </article>
         </div>
     </section>
+    <section class="w-full flex items-center justify-center" style="background-color: #a5a873;">
+        <p class="w-1/2 text-white text-center text-4xl font-bold" style="font-family: 'urbana'">DÉJAME MOSTRARTE TODO LO QUE OBTENDRÁS CUANDO INGRESES A NUESTRO PROGRAMA!</p>
+    </section>
+    
 </Layout>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
@@ -116,5 +136,13 @@ import Start from '../assets/img/start_chef.png'
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+  }
+
+  .roboto{
+    font-family: Cabin;
+  }
+
+  h1, h2{
+    font-family: "urbana", sans-serif;
   }
 </style>
