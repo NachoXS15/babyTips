@@ -6,15 +6,21 @@ import ChefHat from '../assets/img/chef_hat.png'
 import Start from '../assets/img/start_chef.png'
 import logo from '../assets/img/logo.png'
 import Autora from '../assets/img/autora.png'
+import Test1 from '../assets/img/tests/test1.webp'
+import Test2 from '../assets/img/tests/test2.webp'
+import Test3 from '../assets/img/tests/test3.webp'
+import Test4 from '../assets/img/tests/test4.webp'
+import Pagos from '../assets/img/pagos.webp'
 ---
 
 <Layout>
-    <section class="w-full py-10 md:py-0 min-h-screen bg-orange-100 flex items-center justify-center">
+    <!-- Intro -->
+    <section class="w-full py-40 md:py-0 min-h-screen bg-orange-100 flex items-center justify-center">
         <div class="w-full px-10 md:w-4/6 flex flex-col md:flex-row gap-10">
             <div class="w-full md:w-1/2">
                 <Image src={logo} width={150} alt="asd" />
                 <h2 class="text-9xl text-amber-900 uppercase">Baby Tips</h2>
-                <p style="font-family: 'urbana'" class="text-6xl text-amber-900" >Mamá de Gio</p>
+                <!-- <p style="font-family: 'urbana'" class="text-6xl text-amber-900" >Mamá de Gio</p> -->
                 <p class="text-4xl roboto text-amber-900 font-bold">(+DE 250 RECETAS)</p>
                 <p class="mt-10 mb-15 text-amber-900 text-2xl font-bold">Descubre el método BLW y aprende cómo iniciar la alimentación complementaria de manera segura y efectiva para tu bebé.</p>
                 <a href="" style="font-family: 'urbana'" class="mt-20 tracking-wider text-4xl md:text-6xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</a>
@@ -24,6 +30,7 @@ import Autora from '../assets/img/autora.png'
             </div>
         </div>
     </section>
+    <!-- Preguntas -->
     <section class="w-full min-h-fit py-20 flex items-center justify-center px-10 gap-10 flex-col" style="background-color: #7a90af;">
         <h2 class="text-6xl font-bold text-yellow-200">Antes de continuar, responde estas preguntas:</h2>
         <ul class="text-xl flex flex-col gap-5 text-white font-bold">
@@ -38,6 +45,7 @@ import Autora from '../assets/img/autora.png'
             <li>¿Estás cansado de lidiar con purés y cucharas, buscando una opción más natural y menos complicada?</li>
         </ul>
     </section>
+    <!-- ¿Qué aprenderás? -->
     <section class="w-full px-10 min-h-fit py-20 bg-orange-100 flex items-center justify-center flex-col gap-7">
         <h2 class="text-5xl font-bold uppercase text-amber-900">¿Qué aprenderás?</h2>
         <nav class="w-full md:w-4/6 flex flex-col gap-4">
@@ -73,6 +81,7 @@ import Autora from '../assets/img/autora.png'
             </div>
         </nav>
     </section>
+    <!-- Autora -->
     <section class="w-full min-h-fit py-20 bg-pink-200 flex items-center justify-center">
         <div class="w-full md:w-4/6 px-5 flex items-center justify-center flex-col md:flex-row gap-20">
             <Image src={Autora} class="w-96" alt="" />
@@ -84,6 +93,7 @@ import Autora from '../assets/img/autora.png'
             </div>
         </div>
     </section>
+    <!-- ¿Qué incluye? -->
     <section class="w-full px-10 min-h-fit py-20 bg-orange-100 flex items-center justify-center flex-col">
         <div class="w-full md:w-4/6 flex flex-col md:flex-row gap-10">
             <article class="w-full md:w-1/2 flex justify-center items-center flex-col">
@@ -122,10 +132,73 @@ import Autora from '../assets/img/autora.png'
             </article>
         </div>
     </section>
-    <section class="w-full flex items-center justify-center" style="background-color: #a5a873;">
-        <p class="w-1/2 text-white text-center text-4xl font-bold" style="font-family: 'urbana'">DÉJAME MOSTRARTE TODO LO QUE OBTENDRÁS CUANDO INGRESES A NUESTRO PROGRAMA!</p>
+    <!-- Dejame Mostrarte -->
+    <section class="w-full flex py-10 items-center justify-center" style="background-color: #a5a873;">
+        <p class="w-full md:w-1/2 text-white text-center text-4xl font-bold" style="font-family: 'urbana'">¡DÉJAME MOSTRARTE TODO LO QUE OBTENDRÁS CUANDO INGRESES A NUESTRO PROGRAMA!</p>
     </section>
-    
+    <!-- Único Pago -->
+    <section class="w-full flex items-center bg-pink-200 justify-center flex flex-col gap-5 py-10 px-10">
+        <p class="w-full md:w-1/2 text-amber-900 text-center text-5xl font-bold" style="font-family: 'urbana'">UN SOLO Y ÚNICO PAGO PARA TODA LA VIDA SIN COBROS POSTERIORES Y PARA SIEMPRE</p>
+        <a href="" style="font-family: 'urbana'" class="text-4xl md:text-6xl bg-yellow-100 text-amber-900 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</a>
+    </section>
+    <!-- Testimonios -->
+    <section class="w-full h-fit py-10 flex items-center justify-center flex-col px-10" style="background-color: #a5a873;">
+        <h2 class="text-6xl font-bold text-amber-900 text-center">TESTIMONIOS DE MAMÁS</h2>
+        <p class="text-2xl font-bold text-amber-900">Un sin número de mamitas están obteniendo resultados sorprendentes con nuestra guía completa del Método BLW</p>
+        <div class="flex gap-10 flex-col md:flex-row py-10">
+            <div class="flex flex-col gap-10">
+                <Image src={Test1} width={450} alt="asd" />
+                <Image src={Test2} width={450} alt="asd" />
+            </div>
+            <div class="flex flex-col gap-10">
+                <Image src={Test3} width={450} alt="asd" />
+                <Image src={Test4} width={450} alt="asd" />
+            </div>
+        </div>
+    </section>
+    <!-- Preguntas Frecuentes -->
+    <section class="w-full h-fit px-10 bg-orange-100 flex items-center justify-center flex-col py-10">
+        <h2 class="text-6xl text-center text-amber-900">PREGUNTAS FRECUENTES</h2>
+        <div class="w-full xl:w-4/6 py-10">
+            <article class="w-full flex flex-col md:flex-row justify-between py-5 items-center gap-10">
+                <p class="w-full text-center text-2xl bg-yellow-200 rounded-full text-slate-700 py-2 px-0 font-bold">¿Cuánto tiempo tendré acceso a la Guía?</p>
+                <p class="font-bold text-2xl text-slate-700">Tendrás acceso al Canal de WhatsApp de Chef Mom y de la productora para estar en comunicación ante cualquier duda.  Los documentos descargables podrás descargar y guardarlos para siempre.</p>
+            </article>
+            <article class="w-full flex flex-col md:flex-row justify-between py-5 items-center gap-10">
+                <p class="w-full text-center text-2xl bg-yellow-200 rounded-full text-slate-700 py-2 px-0 font-bold">¿Puedo adquirir si aún mi bebé no ha cumplido
+                    los 6 meses?</p>
+                <p class="font-bold text-2xl text-slate-700">Por supuesto, para así asegurar una introducción segura y exitosa a la alimentación complementaria, y estés preparado/a con valiosa información y deliciosas recetas cuando llegue el momento de comenzar esta emocionante etapa en la vida de tu bebé.</p>
+            </article>
+            <article class="w-full flex flex-col md:flex-row justify-between py-5 items-center gap-10">
+                <p class="w-full text-center text-2xl bg-yellow-200 rounded-full text-slate-700 py-2 px-0 font-bold">¿El pago es seguro?</p>
+                <p class="font-bold text-2xl text-slate-700">Sí, es 100% seguro, nuestra página web y plataforma Hotmart cuentan con un sistema de seguridad y encriptado igual de efectivo que las grandes empresas como Amazon y Google. Más de un millón de usuarios están registrados en la plataforma.</p>
+            </article>
+            <article class="w-full flex flex-col md:flex-row justify-between py-5 items-center gap-10">
+                <p class="w-full text-center text-2xl bg-yellow-200 rounded-full text-slate-700 py-2 px-0 font-bold">¿Cómo hago el pago?</p>
+                <p class="font-bold text-2xl text-slate-700">TLos métodos de pago varían de acuerdo al país en el que te encuentres. Disponible con todas las tarjetas, si tu tarjeta es de débito, deberás seleccionar la opción «Tarjeta de Crédito» Perú: Pago Efectivo, México: Oxxo, Colombia: Baloto, Chile: Sencillito, y más..</p>
+            </article>
+        </div>
+    </section>
+    <section class="w-full h-fit flex justify-center items-center p-10" style="background-color: #7a90af;">
+        <div class="w-full md:w-4/6 flex flex-col md:flex-row gap-10">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-yellow-100 text-6xl text-center">MEGA PACK + BONOS + 50% DESCUENTO</h2>
+                <Image src={Books} alt="" />
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col items-center">
+                <div class="mb-10 flex items-center justify-center flex-col">
+                    <span class="text-amber-900 text-4xl mb-2 line-through font-bold">$36.99 USD</span>
+                    <span class="text-white text-7xl md:text-8xl font-bold text-center">$18.99 USD</span>
+                    <span class="text-white mt-2">Se convierte automáticamente en tu moneda oficial de tu pais</span>
+                </div>
+                <a href="" style="font-family: 'urbana'" class="tracking-wider text-4xl md:text-6xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</a>
+                <Image class="mt-10" src={Pagos} alt="asd" />
+            </div>
+        </div>
+    </section>
+    <footer class="w-full py-5 bg-teal-600 text-center">
+        <p class="text-white">&copy Baby Tips 2025</p>
+    </footer>
 </Layout>
 
 <style>
