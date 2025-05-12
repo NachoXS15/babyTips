@@ -1,18 +1,59 @@
 ---
-import Chat from '../components/Chat.astro'
-import '../styles/global.css' 
+import Chat from "../components/Chat.astro";
+import "../styles/global.css";
 ---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/png" href="/logo.png" />
-		<meta name="author" content="Ignacio Joaquín Pantoja">
-		<meta name="description" content="Pagina Principal de BabyTips">
-		<meta name="keywords" content="babies, bebes, alimento, alimentacion, comida, salud">
+		<meta name="author" content="Ignacio Joaquín Pantoja" />
+		<meta name="description" content="Pagina Principal de BabyTips" />
+		<meta
+			name="keywords"
+			content="babies, bebes, alimento, alimentacion, comida, salud"
+		/>
 		<meta name="generator" content={Astro.generator} />
 		<title>BabyTips</title>
+		<!-- Meta Pixel Code -->
+		<script>
+			!(function (f, b, e, v, n, t, s) {
+				if (f.fbq) return;
+				n = f.fbq = function () {
+					n.callMethod
+						? n.callMethod.apply(n, arguments)
+						: n.queue.push(arguments);
+				};
+				if (!f._fbq) f._fbq = n;
+				n.push = n;
+				n.loaded = !0;
+				n.version = "2.0";
+				n.queue = [];
+				t = b.createElement(e);
+				t.async = !0;
+				t.src = v;
+				s = b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t, s);
+			})(
+				window,
+				document,
+				"script",
+				"https://connect.facebook.net/en_US/fbevents.js",
+			);
+			fbq("init", "1859999148098597");
+			fbq("track", "PageView");
+		</script>
+		<noscript
+			><img
+				height="1"
+				width="1"
+				style="display:none"
+				src="https://www.facebook.com/tr?id=1859999148098597&ev=PageView&noscript=1"
+			/></noscript
+		>
+		<!-- End Meta Pixel Code -->
 	</head>
 	<body class="relative">
 		<slot />
@@ -22,7 +63,7 @@ import '../styles/global.css'
 
 <style>
 	@import url("https://use.typekit.net/fnn8bxf.css");
-	@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+	@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
 	html,
 	body {
 		margin: 0;
