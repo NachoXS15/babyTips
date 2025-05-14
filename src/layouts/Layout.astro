@@ -18,7 +18,7 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>BabyTips</title>
 		<!-- Meta Pixel Code -->
-		<script>
+		<script is:inline>
 			!(function (f, b, e, v, n, t, s) {
 				if (f.fbq) return;
 				n = f.fbq = function () {
@@ -44,6 +44,11 @@ import "../styles/global.css";
 			);
 			fbq("init", "1859999148098597");
 			fbq("track", "PageView");
+			if (window.fbq) {
+				console.log("PageView registrado");
+			}else{
+				console.log("Error");
+			}
 		</script>
 		<noscript
 			><img
