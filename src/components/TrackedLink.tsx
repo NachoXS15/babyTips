@@ -30,7 +30,7 @@ export default function TrackedLink({ href, children, eventName, params, classNa
 
   return (
     <>
-      <a href={href} onClick={handleClick} className={className} target={target}>
+      <a href={href} onClick={handleClick} className={className} target={target} style={{fontFamily: 'urbana'}}>
         {children}
       </a>
       {fired && <FacebookPixel eventName={eventName} params={params} />}

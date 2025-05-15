@@ -18,6 +18,7 @@ import Tomo4 from '../assets/img/tomos/tomo4.webp'
 import Tomo5 from '../assets/img/tomos/tomo5.webp'
 import Calendar from '../assets/img/calendar.webp'
 import Canal from '../assets/img/canal.webp'
+import TrackedLink from "../components/TrackedLink";
 ---
 
 <Layout>
@@ -30,7 +31,7 @@ import Canal from '../assets/img/canal.webp'
                 <!-- <p style="font-family: 'urbana'" class="text-6xl text-amber-900" >Mamá de Gio</p> -->
                 <p class="text-4xl roboto text-amber-900 font-bold">(+DE 250 RECETAS)</p>
                 <p class="mt-10 mb-15 text-amber-900 text-xl font-bold">Descubre el método BLW y aprende cómo iniciar la alimentación complementaria de manera segura y efectiva para tu bebé.</p>
-                <a href="https://pay.hotmart.com/X96094477X?off=up19jowt&ref=D98863057T&bid=1745973311707" target="_blank" style="font-family: 'urbana'" class="tracking-wider text-3xl md:text-6xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</a>
+                <TrackedLink eventName="Purchase" href="https://pay.hotmart.com/X96094477X?off=up19jowt&ref=D98863057T&bid=1745973311707" target="_blank" className="tracking-wider text-3xl md:text-6xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</TrackedLink>
             </div>
             <div class="w-full md:w-1/2">
                 <Image src={Start} alt="asd"/>
@@ -91,7 +92,7 @@ import Canal from '../assets/img/canal.webp'
             <article class="w-full md:w-1/2 flex justify-center items-center flex-col">
                 <h2 class="text-4xl text-center text-amber-900 font-bold uppercase" text-center>¿QUÉ INCLUYE EN ESTE MEGAPACK DE CURSOS?</h2>
                 <Image src={Books} alt="libros" />
-                <a href="https://pay.hotmart.com/X96094477X?off=up19jowt&ref=D98863057T&bid=1745973311707" target="_blank" style="font-family: 'urbana'" class="text-4xl md:text-6xl text-yellow-100 bg-pink-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</a>
+                <TrackedLink eventName="Purchase" href="https://pay.hotmart.com/X96094477X?off=up19jowt&ref=D98863057T&bid=1745973311707" target="_blank" className="tracking-wider text-3xl md:text-6xl text-amber-900 bg-pink-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</TrackedLink>
             </article>
             <article class="flex flex-col gap-10 md:gap-0 justify-between">
                 <div class="flex items-center gap-5">
@@ -212,7 +213,7 @@ import Canal from '../assets/img/canal.webp'
     <!-- Único Pago -->
     <section class="w-full flex items-center bg-pink-100 justify-center flex-col gap-5 py-10 px-5">
         <p class="w-full md:w-1/2 text-amber-900 text-center text-5xl font-bold" style="font-family: 'urbana'">UN SOLO Y ÚNICO PAGO PARA TODA LA VIDA SIN COBROS POSTERIORES Y PARA SIEMPRE</p>
-        <a href="https://pay.hotmart.com/X96094477X?off=up19jowt&ref=D98863057T&bid=1745973311707" target="_blank" style="font-family: 'urbana'" class="text-4xl md:text-6xl bg-yellow-100 text-amber-900 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</a>
+        <TrackedLink eventName="Purchase" href="https://pay.hotmart.com/X96094477X?off=up19jowt&ref=D98863057T&bid=1745973311707" target="_blank" className="tracking-wider text-3xl md:text-6xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</TrackedLink>
     </section>
     <!-- Testimonios -->
     <section class="w-full h-fit py-10 flex items-center justify-center flex-col px-5" style="background-color: #a5a873;">
@@ -265,7 +266,7 @@ import Canal from '../assets/img/canal.webp'
                     <span class="text-white text-5xl md:text-8xl font-bold text-center">$18.99 USD</span>
                     <p class="text-white text-center mt-2">Se convierte automáticamente en tu moneda oficial de tu pais</p>
                 </div>
-                <a href="https://pay.hotmart.com/X96094477X?off=up19jowt&ref=D98863057T&bid=1746072952408" target="_blank" style="font-family: 'urbana'" class="tracking-wider text-4xl md:text-6xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</a>
+                <TrackedLink eventName="Purchase" href="https://pay.hotmart.com/X96094477X?off=up19jowt&ref=D98863057T&bid=1745973311707" target="_blank" className="tracking-wider text-3xl md:text-6xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</TrackedLink>
                 <Image class="mt-10" src={Pagos} alt="asd" />
             </div>
         </div>
