@@ -3,7 +3,7 @@ import Image from "astro/components/Image.astro";
 import Layout from "../layouts/Layout.astro";
 import Books from '../assets/img/books.png'
 import ChefHat from '../assets/img/chef_hat.png'
-import Start from '../assets/img/start_chef.png'
+import Start from '../assets/img/start.mp4'
 import logo from '../assets/img/logo.png'
 import Autora from '../assets/img/autora.png'
 import Test1 from '../assets/img/tests/test1.webp'
@@ -24,17 +24,21 @@ import TrackedLink from "../components/TrackedLink";
 <Layout>
     <!-- Intro -->
     <section class="w-full py-10 md:py-0 min-h-screen bg-orange-100 flex items-center justify-center">
-        <div class="w-full px-5 md:w-4/6 flex flex-col md:flex-row gap-10">
-            <div class="w-full md:w-1/2">
-                <Image src={logo} width={150} class="m-auto md:m-0" alt="asd" />
-                <h2 class="text-7xl md:text-9xl text-amber-900 uppercase">Baby Tips</h2>
-                <!-- <p style="font-family: 'urbana'" class="text-6xl text-amber-900" >Mamá de Gio</p> -->
-                <p class="text-4xl roboto text-amber-900 font-bold">(+DE 250 RECETAS)</p>
-                <p class="mt-10 mb-15 text-amber-900 text-xl font-bold">Descubre el método BLW y aprende cómo iniciar la alimentación complementaria de manera segura y efectiva para tu bebé.</p>
-                <TrackedLink eventName="Purchase" href="https://pay.hotmart.com/X96094477X?off=up19jowt&ref=D98863057T&bid=1745973311707" target="_blank" className="tracking-wider text-3xl md:text-6xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</TrackedLink>
+        <div class="w-full px-5 md:w-4/6 flex flex-col items-center md:flex-row gap-10">
+            <div class="w-full md:w-4/6">
+                <div class="flex gap-2 items-center">
+                    <Image src={logo} width={80} class="md:m-0" alt="asd" />
+                    <h2 class="text-amber-900 text-3xl">Baby Tips</h2>
+                </div>
+                <!-- <h2 class="text-7xl md:text-8xl text-amber-900"></h2>
+                <p class="text-4xl roboto text-amber-900"></p> -->
+                <p class="mt-20 mb-25 text-amber-900 text-2xl md:text-5xl font-bold">Nunca más te quedes sin ideas: +250 recetas para bebés sanas, fáciles y listas para usar.</p>
+                <TrackedLink eventName="Purchase" href="https://pay.hotmart.com/X96094477X?off=up19jowt&ref=D98863057T&bid=1745973311707" target="_blank" className="tracking-wider text-3xl md:text-4xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</TrackedLink>
             </div>
-            <div class="w-full md:w-1/2">
-                <Image src={Start} alt="asd"/>
+            <div class="w-full md:w-2/6">
+                <video autoplay loop muted width="1000" class="">
+                    <source src={Start} type="video/mp4">
+                </video>
             </div>
         </div>
     </section>
