@@ -23,25 +23,64 @@ import TrackedLink from "../components/TrackedLink";
 
 <Layout>
     <!-- Intro -->
-    <section class="w-full py-10 md:py-0 min-h-screen bg-orange-100 flex items-center justify-center">
-        <div class="w-full px-5 md:w-4/6 flex flex-col items-center md:flex-row gap-10">
-            <div class="w-full md:w-4/6">
-                <div class="flex gap-2 items-center">
-                    <Image src={logo} width={80} class="md:m-0" alt="asd" />
-                    <h2 class="text-amber-900 text-3xl">Baby Tips</h2>
-                </div>
-                <!-- <h2 class="text-7xl md:text-8xl text-amber-900"></h2>
-                <p class="text-4xl roboto text-amber-900"></p> -->
-                <p class="mt-20 mb-25 text-amber-900 text-2xl md:text-5xl font-bold">Nunca más te quedes sin ideas: +250 recetas para bebés sanas, fáciles y listas para usar.</p>
-                <TrackedLink eventName="Purchase" href="https://pay.hotmart.com/X96094477X?off=up19jowt&ref=D98863057T&bid=1745973311707" target="_blank" className="tracking-wider text-3xl md:text-4xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</TrackedLink>
-            </div>
-            <div class="w-full md:w-2/6">
-                <video autoplay loop muted width="1000" class="">
-                    <source src={Start} type="video/mp4">
-                </video>
-            </div>
+    <header class="w-full h-32 py-10 flex items-center justify-between bg-yellow-200 px-5 md:px-10 lg:justify-around" style="font-family: Cabin;">
+        <a href="/" class="flex items-center gap-2">
+            <Image src={logo} width={80} height={80}  alt="logo" />
+            <p class="text-2xl text-slate-700 font-semibold">Baby Tips</p>
+        </a>
+        <nav aria-hidden class="hidden lg:flex gap-4">
+            <a href="#info" class="text-xl text-slate-700 hover:scale-105 transition">¿Qué aprenderás?</a>
+            <a href="#modules" class="text-xl text-slate-700 hover:scale-105 transition">Contenido</a>
+            <a href="#tests" class="text-xl text-slate-700 hover:scale-105 transition">Testimonios</a>
+            <a href="#bio" class="text-xl text-slate-700 hover:scale-105 transition">Biografia</a>
+            <a href="#contact" class="text-xl text-slate-700 hover:scale-105 transition">Contacto</a>
+        </nav>
+        <button id="menu-button"
+        data-collapse-toggle="navbar-sticky"
+        data-nav-toggle="#navbar-sticky"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-sticky"
+        aria-expanded="false"
+        >
+        <span class="sr-only">Open main menu</span>
+        <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+        >
+            <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"></path>
+        </svg>
+        </button>
+    </header>
+    <div class={`hidden lg:hidden w-full bg-semi-black absolute top-30 bg-teal-50 border z-50`} id="menu-open">
+        <div class="w-full bg-semi-black bg-opacity-20 h-fit z-50">
+            <nav class="w-full flex flex-col gap-4 p-5 font-medium">
+                <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">¿Qué aprenderás?</a>
+                <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">Testimonios</a>
+                <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">Contenido</a>
+                <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">Biografia</a>
+                <a href="#" class="text-xl text-slate-700 hover:scale-105 transition">Contacto</a>
+            </nav>
         </div>
+    </div>
+    <!-- Banner -->
+    <section id="default-carousel" class="relative w-full">
+        <div class="relative overflow-hidden rounded-lg h-[650px]">
+            <div class="slide absolute w-full h-full">
+                <div style={`background-image: url("/index/bg12.webp")`} class="absolute bg-cover bg-center flex items-center justify-center bg-teal-50 min-h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                    <h2 class="text-teal-700 bg-white/75 text-center w-4/6 lg:w-1/2 bg-opacity-40 py-7 px-2 md:px-7 text-4xl md:text-4xl text-wrap lg:text-5xl" style="color: #384558;">Nunca más te quedes sin ideas: +250 recetas para bebés sanas, fáciles y listas para usar.</h2>
+                </div>
+            </div>
+        </div>    
     </section>
+
     <!-- Preguntas -->
     <section class="w-full min-h-fit py-20 flex items-center justify-center px-5 gap-10 flex-col" style="background-color: #7a90af;">
         <h2 class="text-6xl font-bold text-yellow-200">Antes de continuar, responde estas preguntas:</h2>
@@ -290,3 +329,11 @@ h1, h2{
     font-weight: 600;
   }
 </style>
+    <script>
+        const button = document.querySelector('#menu-button') as Element;
+        const menuOpen = document.querySelector("#menu-open") as Element;
+
+        button?.addEventListener("click", () => {
+            menuOpen.classList.toggle("hidden");
+        });
+    </script>
