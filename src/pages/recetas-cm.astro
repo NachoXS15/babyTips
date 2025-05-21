@@ -19,11 +19,12 @@ import Tomo5 from '../assets/img/tomos/tomo5.webp'
 import Calendar from '../assets/img/calendar.webp'
 import Canal from '../assets/img/canal.webp'
 import TrackedLink from "../components/TrackedLink";
+import { Star } from "../components/Icons";
 ---
 
 <Layout>
     <!-- Intro -->
-    <header class="w-full h-32 py-10 flex items-center justify-between bg-yellow-200 px-5 md:px-10 lg:justify-around" style="font-family: Cabin;">
+    <header class="w-full h-32 py-10 flex items-center justify-between bg-orange-200 px-5 md:px-10 lg:justify-around" style="font-family: Cabin;">
         <a href="/" class="flex items-center gap-2">
             <Image src={logo} width={80} height={80}  alt="logo" />
             <p class="text-2xl text-slate-700 font-semibold">Baby Tips</p>
@@ -74,38 +75,62 @@ import TrackedLink from "../components/TrackedLink";
     </div>
     <!-- Banner -->
     <section id="default-carousel" class="relative w-full">
-        <div class="relative overflow-hidden rounded-lg h-[650px]">
+        <div class="relative overflow-hidden h-[450px] md:h-[650px]">
             <div class="slide absolute w-full h-full">
-                <div style={`background-image: url("/index/bg12.webp")`} class="absolute bg-cover bg-center flex items-center justify-center bg-teal-50 min-h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                    <h2 class="text-teal-700 bg-white/75 text-center w-4/6 lg:w-1/2 bg-opacity-40 py-7 px-5 md:px-2 md:px-7 text-3xl md:text-4xl text-wrap lg:text-5xl" style="color: #384558;">La guía definitiva para alimentar a tu bebé sin miedo, sin estrés… y con más de 250 recetas que sí vas a usar.</h2>
+                <div style={`background-image: url("/index/bg12.webp")`} class="absolute bg-cover bg-center flex items-center justify-center bg-teal-50 min-h-full w-full">
+                    <h2 class="text-teal-700 bg-white/75 text-center w-4/6 lg:w-1/2 bg-opacity-40 py-7 px-5 md:px-2 md:px-7 text-2xl md:text-4xl text-wrap lg:text-5xl" style="color: #384558;">La guía definitiva para alimentar a tu bebé sin miedo, sin estrés… y con más de 250 recetas que sí vas a usar.</h2>
                 </div>
             </div>
         </div>    
     </section>
     <!-- Subtitulo -->
-    <section class="w-full bg-yellow-200 p-10 flex items-center justify-center flex-col gap-4">
+    <section class="w-full bg-orange-200 p-10 flex items-center justify-center flex-col gap-4">
         <p class="w-full md:w-1/2 text-white text-center text-3xl font-bold" style="font-family: 'urbana'; color: #384558;">Porque tener guardadas 100 recetas en <u>Instagram no sirve de nada si no sabes por dónde empezar</u>, cómo cortar los alimentos o si son seguros para tu bebé.</p>
-        <p class="w-full pt-5 md:w-1/2 text-white text-center text-4xl font-bold" style="font-family: 'urbana'; color: #384558;">Esta guía te acompaña <u>paso a paso</u>, con recetas probadas, visuales claras y tips que realmente puedes aplicar hoy.</p>
+        <p class="w-full pt-5 md:w-1/2 text-white text-center text-3xl font-bold" style="font-family: 'urbana'; color: #384558;">Esta guía te acompaña <u>paso a paso</u>, con recetas probadas, visuales claras y tips que realmente puedes aplicar hoy.</p>
     </section>
     <!-- Preguntas -->
-    <section class="w-full min-h-fit py-20 flex items-center justify-center px-5 gap-10 flex-col" style="background-color: #7a90af;">
-        <h2 class="text-6xl font-bold text-yellow-200">Te entiendo, mamá...</h2>
-        <ul class="text-xl flex flex-col gap-5 text-white font-bold">
-            <li>Todo está en un solo lugar: recetas, menús, tips, organización y más. Para que no pierdas más tiempo buscando y sí ganes más tiempo con tu bebé.”</li>
-            <li>Decile adiós al miedo al atragantamiento: te enseñamos cómo ofrecer cada alimento de forma segura, clara y práctica.”</li>
-            <li>No necesitás ser chef, solo una mamá con ganas de alimentar bien a su bebé. Nosotros te damos las ideas, vos ponés el amor</li>
-            <li>No tenés que hacerlo sola, ni saberlo todo de golpe. Con esta guía paso a paso, te vas a sentir segura en cada comida</li>
-            <li>No más dudas ni confusión. Vas a saber exactamente qué darle, cuándo, cómo y por qué</li>
-            <li>Te damos las recetas que sí vas a usar. Porque están pensadas para tu día a día, tus ingredientes y tu tiempo real.”</li>
-            <li>Cuidás su salud hoy y construís sus hábitos para mañana. Y eso empieza con cada comida que le das con amor</li>
-        </ul>
+    <section class="w-full min-h-fit py-20 flex items-center justify-center px-10 gap-5 flex-col" style="background-color: #7a90af;">
+        <div class="md:w-3/5">
+            <h2 class="text-3xl self-start md:text-6xl mb-5 font-bold text-yellow-200">Tus deseos pueden ser una realidad...</h2>
+            <div class="text-xl flex flex-col gap-3 text-white font-bold">
+                <div class="flex  gap-3">
+                    <Star />
+                    <span>Todo está en un solo lugar: recetas, menús, tips, organización y más. Para que no pierdas más tiempo buscando y sí ganes más tiempo con tu bebé.</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <Star />
+                    <span>Decile adiós al miedo al atragantamiento: te enseñamos cómo ofrecer cada alimento de forma segura, clara y práctica.</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <Star />
+                    <span>No necesitás ser chef, solo una mamá con ganas de alimentar bien a su bebé. Nosotros te damos las ieas, vos ponés el amor</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <Star />
+                    <span>No tenés que hacerlo sola, ni saberlo todo de golpe. Con esta guía paso a paso, te vas a sentir segura en cada comida</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <Star />
+                    <span>No más dudas ni confusión. Vas a saber exactamente qué darle, cuándo, cómo y por qué</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <Star />
+                    <span>Te damos las recetas que sí vas a usar. Porque están pensadas para tu día a día, tus ingredientes y tu tiempo real.”</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <Star />
+                    <span>Cuidás su salud hoy y construís sus hábitos para mañana. Y eso empieza con cada comida que le das con amor</span>
+                </div>
+            </div>   
+        </div>
     </section>
     <!-- ¿Qué incluye? -->
-    <section class="w-full px-5 min-h-fit py-20 bg-orange-100 flex items-center justify-center flex-col" id="incluye">
+    <section class="w-full px-10 min-h-fit py-20 bg-orange-100 flex items-center justify-center flex-col" id="incluye">
         <div class="w-full md:w-4/6 flex flex-col md:flex-row gap-10">
             <article class="w-full md:w-1/2 flex justify-center items-center flex-col">
-                <h2 class="text-4xl text-center text-amber-900 font-bold uppercase" text-center>NUESTRO MEGAPACK INCLUYE:</h2>
+                <h2 class="text-3xl md:text-4xl text-center text-amber-900 font-bold uppercase" text-center>NUESTRO MEGAPACK INCLUYE:</h2>
                 <Image src={Books} alt="libros" />
+                <TrackedLink eventName="Purchase" href="https://pay.hotmart.com/X96094477X?off=up19jowt&ref=D98863057T&bid=1745973311707" target="_blank" className="tracking-wider mt-4 text-4xl md:text-4xl text-amber-900 bg-yellow-200 px-5 py-2 md:px-8 md:py-4 rounded-full hover:scale-105 transition">Comprar Ahora</TrackedLink>
             </article>
             <article class="flex flex-col gap-10 md:gap-5 justify-between">
                 <div class="flex items-center gap-5">
@@ -138,12 +163,9 @@ import TrackedLink from "../components/TrackedLink";
             </article>
         </div>
     </section>
-    <!-- Dejame Mostrarte -->
-    <section class="w-full flex py-10 items-center justify-center" style="background-color: #a5a873;">
-        <p class="w-full md:w-1/2 text-white text-center text-4xl font-bold" style="font-family: 'urbana'">¡DÉJAME MOSTRARTE TODO LO QUE OBTENDRÁS CUANDO INGRESES A NUESTRO PROGRAMA!</p>
-    </section>
     <!-- Tomos -->
-    <section class="w-full flex items-center justify-center px-5 py-10 bg-orange-100" id="contenidos">
+    <section class="w-full flex items-center justify-center px-10 py-10 flex-col bg-orange-200" id="contenidos">
+        <h2 class="w-full md:w-1/2 text-amber-900 text-center text-3xl md:text-6xl font-bold" style="font-family: 'urbana'">¡NUESTRO TEMARIO!</h2>
         <div class="w-full md:w-4/6 flex flex-col">
             <article class="w-full flex flex-col md:flex-row justify-center items-center">
                 <Image src={Tomo1} width={350} alt="tomo1" />
@@ -183,8 +205,8 @@ import TrackedLink from "../components/TrackedLink";
         </div>
     </section>
     <!--Bonos -->
-    <section class="w-fill h-fit flex flex-col items-center justify-center px-5 py-10 bg-pink-200" id="bonos">
-        <h2 class="text-center text-amber-900 text-3xl md:text-5xl">Y AÚN HAY MÁS</h2>
+    <section class="w-fill h-fit flex flex-col items-center justify-center px-10 py-10 bg-orange-100" id="bonos">
+        <h2 class="text-center text-amber-900 text-3xl md:text-5xl">Y AÚN HAY MÁS...</h2>
         <h2 class="text-center text-amber-900 text-3xl md:text-5xl">5 BONOS ADICIONALES COMPLETAMENTE GRATIS</h2>
         <div class="w-full md:w-4/6 flex items-center py-10 justify-around gap-5 flex-col">
             <article class="w-full flex items-center gap-20 flex-col md:flex-row">
@@ -225,19 +247,19 @@ import TrackedLink from "../components/TrackedLink";
         </div>
     </section>
     <!-- Autora -->
-    <section class="w-full min-h-fit pt-20 pb-10 bg-pink-100 flex items-center justify-center" id="autora">
-        <div class="w-full md:w-4/6 px-5 flex items-center justify-center flex-col md:flex-row gap-8 md:gap-20">
-            <Image src={Autora} class="w-60" alt="" />
-            <div class="w-full md:w-1/2">
-                <h2 class="text-amber-900 text-3xl md:text-6xl mb-10">Hola, soy Aracely Upiachihua</h2>
-                <p class="text-amber-900 text-md md:text-xl mb-5 md:mb-10">Mamá y autora de "Chef Mom: Mamá de Gio".</p>
-                <p class="text-amber-900 text-md md:text-xl font-bold mb-5 md:mb-10">Como madre primeriza, decidí sumergirme en el mundo de la alimentación complementaria con el deseo de proporcionar a mi bebé una experiencia nutritiva y segura desde el principio. Esta decisión me llevó a estudiar y prepararme a fondo, asegurándome de estar equipada para guiar a mi hija en esta emocionante etapa sin temor ni incertidumbre.</p>
-                <p class="text-amber-900 text-md md:text-xl font-bold">Mi pasión y mi propósito se unen en esta guía, donde comparto todo lo que aprendí en mi viaje como madre y en mi investigación sobre el método BLW. Mi objetivo es brindar apoyo y orientación a mamás y papás que desean iniciar la alimentación complementaria de sus bebés de manera segura y confiada, utilizando el enfoque del BLW.</p>
+    <section class="w-full min-h-fit pt-20 px-10 pb-10 flex items-center justify-center" id="autora" style="background-color: #7a90af;">
+        <div class="w-full xl:w-4/6 px-5 flex items-center justify-center flex-col xl:flex-row gap-8 md:gap-20">
+            <Image src={Autora} class="w-40 md:w-72" alt="" />
+            <div class="w-full xl:w-1/2">
+                <h2 class="text-yellow-200 text-3xl md:text-5xl mb-6">Hola, soy Aracely Upiachihua</h2>
+                <p class="text-white text-md md:text-xl mb-5 ">Mamá y autora de "Chef Mom: Mamá de Gio".</p>
+                <p class="text-white text-md md:text-xl font-bold mb-5 md:mb-4">Como madre primeriza, decidí sumergirme en el mundo de la alimentación complementaria con el deseo de proporcionar a mi bebé una experiencia nutritiva y segura desde el principio. Esta decisión me llevó a estudiar y prepararme a fondo, asegurándome de estar equipada para guiar a mi hija en esta emocionante etapa sin temor ni incertidumbre.</p>
+                <p class="text-white text-md md:text-xl font-bold">Mi pasión y mi propósito se unen en esta guía, donde comparto todo lo que aprendí en mi viaje como madre y en mi investigación sobre el método BLW. Mi objetivo es brindar apoyo y orientación a mamás y papás que desean iniciar la alimentación complementaria de sus bebés de manera segura y confiada, utilizando el enfoque del BLW.</p>
             </div>
         </div>
     </section>
     <!-- Testimonios -->
-    <section class="w-full h-fit py-10 flex items-center justify-center flex-col px-5" style="background-color: #a5a873;" id="testimonios">
+    <section class="w-full h-fit py-10 flex items-center justify-center flex-col bg-orange-200 px-10"  id="testimonios">
         <h2 class="text-3xl md:text-6xl text-center font-bold text-amber-900">TESTIMONIOS DE MAMÁS</h2>
         <p class="text-md md:text-xl text-center font-bold text-amber-900">Un sin número de mamitas están obteniendo resultados sorprendentes con nuestra guía completa del Método BLW</p>
         <div class="flex gap-10 flex-col md:flex-row py-10">
@@ -252,11 +274,11 @@ import TrackedLink from "../components/TrackedLink";
         </div>
     </section>
     <!-- Preguntas Frecuentes -->
-    <section class="w-full h-fit px-5 bg-orange-100 flex items-center justify-center flex-col py-10" id="faq">
-        <h2 class="text-6xl text-center text-amber-900">PREGUNTAS FRECUENTES</h2>
-        <div class="w-full xl:w-4/6 py-10">
+    <section class="w-full h-fit p-10 pt-5 bg-orange-100 flex items-center justify-center flex-col" id="faq">
+        <h2 class="text-4xl md:text-6xl text-center text-amber-900 mt-10">PREGUNTAS FRECUENTES</h2>
+        <div class="w-full xl:w-4/6 mt-5">
             <article class="w-full flex flex-col md:flex-row justify-between py-5 items-center gap-10">
-                <p class="w-full text-center text-xl bg-yellow-200 rounded-full text-slate-700 py-2 px-0 font-bold">¿Cuánto tiempo tendré acceso <br> a la Guía?</p>
+                <p class="w-full text-center text-xl bg-yellow-200 rounded-full text-slate-700 py-2 px-2 font-bold">¿Cuánto tiempo tendré acceso <br> a la Guía?</p>
                 <p class="font-bold text-md md:text-xl text-slate-700">Tendrás acceso al Canal de WhatsApp de Chef Mom y de la productora para estar en comunicación ante cualquier duda.  Los documentos descargables podrás descargar y guardarlos para siempre.</p>
             </article>
             <article class="w-full flex flex-col md:flex-row justify-between py-5 items-center gap-10">
@@ -273,6 +295,9 @@ import TrackedLink from "../components/TrackedLink";
                 <p class="font-bold text-md md:text-xl text-slate-700">TLos métodos de pago varían de acuerdo al país en el que te encuentres. Disponible con todas las tarjetas, si tu tarjeta es de débito, deberás seleccionar la opción «Tarjeta de Crédito» Perú: Pago Efectivo, México: Oxxo, Colombia: Baloto, Chile: Sencillito, y más..</p>
             </article>
         </div>
+    </section>
+    <section class="w-full py-5 px-10 bg-teal-700 text-center">
+        <p class="md:w-3/5 m-auto text-center text-xl md:text-3xl text-white">Este no es solo un recetario. Es la tranquilidad de saber que estás alimentando con consciencia, amor y propósito.</p>
     </section>
     <!-- Pago -->
     <section class="w-full h-fit flex justify-center items-center py-10 px-10" style="background-color: #7a90af;">
@@ -293,9 +318,9 @@ import TrackedLink from "../components/TrackedLink";
         </div>
     </section>
     <!-- Final -->
-    <footer class="w-full py-5 bg-teal-700 text-center">
+    <footer class="w-full py-5 px-10 bg-teal-700 text-center">
         <p class="text-white">&copy Baby Tips 2025</p>
-        <p class="text-white mt-3">Responsabilidad: Este producto no garantiza la obtención de resultados.</p>
+        <p class="text-white mt-3">Responsabilidad: Este producto no garantiza la obtención de resultados. Esta página no está afiliada a Meta o adheridos.</p>
     </footer>
 </Layout>
 
