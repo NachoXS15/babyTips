@@ -19,6 +19,7 @@ import "../styles/global.css";
 		<title>BabyTips</title>
 		<!-- Meta Pixel Code -->
 		<script is:inline>
+			//pixel
 			!(function (f, b, e, v, n, t, s) {
 				if (f.fbq) return;
 				n = f.fbq = function () {
@@ -44,11 +45,17 @@ import "../styles/global.css";
 			);
 			fbq("init", "1859999148098597");
 			fbq("track", "PageView");
-			if (window.fbq) {
-				console.log("PageView registrado");
-			}else{
-				console.log("Error");
-			}
+
+			//access_token
+			const eventId = 'viewcontent-' + Date.now();
+			fetch('/api/meta-conversion', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({
+					event_id: eventId,
+					event_source_url: window.location.href
+				}),
+			});
 		</script>
 		<noscript
 			><img
