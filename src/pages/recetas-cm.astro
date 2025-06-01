@@ -3,6 +3,7 @@ import Image from "astro/components/Image.astro";
 import Layout from "../layouts/Layout.astro";
 import Books from '../assets/img/books.png'
 import ChefHat from '../assets/img/chef_hat.png'
+import BabyIcon from '../assets/img/babyIcon.webp'
 import Start from '../assets/img/start.mp4'
 import logo from '../assets/img/logo.png'
 import Autora from '../assets/img/autora.png'
@@ -19,7 +20,6 @@ import Tomo5 from '../assets/img/tomos/tomo5.webp'
 import Calendar from '../assets/img/calendar.webp'
 import Canal from '../assets/img/canal.webp'
 import TrackedLink from "../components/TrackedLink";
-import { Star } from "../components/Icons";
 import Babies from '../utils/Images'
 
 ---
@@ -93,36 +93,36 @@ import Babies from '../utils/Images'
         </div>
         <div class="xl:w-3/5">
             <div class="text-xl flex flex-col gap-3 font-bold" style="color: #384558">
-                <div class="flex gap-3">
-                    <Star />
+                <div class="flex gap-3 md:items-center">
+                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
                     <span>Todo está en un solo lugar: recetas, menús, tips, organización y más. Para que no pierdas tiempo buscando</span>
                 </div>
-                <div class="flex gap-3">
-                    <Star />
+                <div class="flex gap-3 md:items-center">
+                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
                     <span>Ideas prácticas y nutritivas para cada día: Desayunos, almuerzos, cenas, snacks y más.</span>
                 </div>
-                <div class="flex gap-3">
-                    <Star />
+                <div class="flex gap-3 md:items-center">
+                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
                     <span>Guía paso a paso para empezar sin miedo: Qué, cómo y cuándo ofrecer alimentos.</span>
                 </div>
-                <div class="flex gap-3">
-                    <Star />
+                <div class="flex gap-3 md:items-center">
+                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
                     <span>Cómo cortar y preparar alimentos de forma segura para cada étapa, así evitamos el atragantamiento.</span>
                 </div>
-                <div class="flex gap-3">
-                    <Star />
+                <div class="flex gap-3 md:items-center">
+                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
                     <span>Introducción de alimentos alergénicos</span>
                 </div>
-                <div class="flex gap-3">
-                    <Star />
+                <div class="flex gap-3 md:items-center">
+                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
                     <span>Tips de organización, Batch Cooking y almacenamiento.</span>
                 </div>
-                <div class="flex gap-3">
-                    <Star />
+                <div class="flex gap-3 md:items-center">
+                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
                     <span>Crear menús semanales en minutos con nuestros calendarios.</span>
                 </div>
-                <div class="flex gap-3">
-                    <Star />
+                <div class="flex gap-3 md:items-center">
+                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
                     <span>Fomentar la independencia, el disfrute y el vínculo a la hora de comer.</span>
                 </div>
             </div>   
@@ -322,7 +322,7 @@ import Babies from '../utils/Images'
     </section>
     <!-- Pago -->
     <section class="w-full h-fit flex justify-center items-center py-10 px-10 bg-orange-200">
-        <div class="w-full md:w-4/6 flex flex-col md:flex-row gap-10">
+        <div class="w-full xl:w-4/6 flex flex-col md:flex-row gap-10">
             <div class="w-full md:w-1/2">
                 <h2 class="text-amber-900 text-4xl md:text-6xl text-center">MEGA PACK + BONOS + 50% DESCUENTO</h2>
                 <Image src={Books} alt="" />
@@ -333,7 +333,7 @@ import Babies from '../utils/Images'
                     <span class="text-amber-900 text-6xl md:text-8xl font-bold text-center">$18.99 USD</span>
                     <p class="text-center mt-2" style="color: #384558">Se convierte automáticamente en tu moneda oficial de tu pais</p>
                 </div>
-                <TrackedLink eventName="Purchase" href="https://go.hotmart.com/D98863057T?ap=fabc" target="_blank" className="tracking-wider text-3xl md:text-6xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</TrackedLink>
+                <TrackedLink eventName="Purchase" href="https://go.hotmart.com/D98863057T?ap=fabc" target="_blank" className="tracking-wider text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</TrackedLink>
                 <Image class="mt-10" src={Pagos} alt="asd" />
             </div>
         </div>
