@@ -53,11 +53,12 @@ import "../styles/global.css";
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({
 					event_id: eventId,
+					event_name: "PageView",
 					event_source_url: window.location.href,
 				}),
 			});
 
-			//clarify
+			//clarity
 			(function (c, l, a, r, i, t, y) {
 				c[a] =
 					c[a] ||
