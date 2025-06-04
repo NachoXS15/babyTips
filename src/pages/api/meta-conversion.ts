@@ -1,5 +1,3 @@
-export const prerender = false;
-
 import type { APIRoute } from 'astro';
 const accessToken = import.meta.env.ACCESS_TOKEN;
 const pixelId = import.meta.env.PIXEL_ID;
