@@ -3,8 +3,6 @@ const accessToken = import.meta.env.ACCESS_TOKEN;
 const pixelId = import.meta.env.PIXEL_ID;
 
 export const POST: APIRoute = async ({ request }) => {
-  console.log(pixelId);
-  console.log(accessToken);
   const body = await request.json();
   const event_id = body.event_id;
   const event_source_url = body.event_source_url;
