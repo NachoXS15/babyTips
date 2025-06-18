@@ -32,9 +32,11 @@ import Grid5 from '../assets/img/grid/grid5.jpg'
 import Grid6 from '../assets/img/grid/grid6.jpeg'
 import Grid7 from '../assets/img/grid/grid7.jpeg'
 import Grid8 from '../assets/img/grid/grid8.jpeg'
+import audio from '../assets/audio.mp3'
 ---
 
 <Layout>
+    <!-- <audio src={audio} id="audio" autoplay loop></audio> -->
     <!-- Intro -->
     <header class="w-full h-32 py-10 flex items-center justify-between bg-orange-50 px-5 md:px-10 lg:justify-around" style="font-family: Cabin;">
         <a href="/" class="flex items-center gap-2">
@@ -151,6 +153,10 @@ import Grid8 from '../assets/img/grid/grid8.jpeg'
         <p class="w-full xl:w-3/5 text-white text-center text-3xl" style="font-family: 'urbana'; color: #384558;">Esta guía te acompaña <u>paso a paso</u>, con recetas probadas, visuales claras y tips que realmente puedes aplicar hoy.</p>
         <hr class="w-20 border-amber-900 border-2 m-auto my-15" />
     </section>
+    <!-- Promesa -->
+    <section class="w-full py-10 mb-5 px-10 bg-red-500 text-center">
+        <p class="md:w-3/5 m-auto text-center font-bold text-xl md:text-3xl text-white">APROVECHÁ EL DESCUENTO DEL 50% 🍪💫</p>
+    </section>
     <!-- ¿Qué incluye? -->
     <section class="w-full px-10  min-h-fit bg-orange-50 flex items-center justify-center flex-col" id="incluye">
         <div class="w-full xl:w-4/6 flex flex-col items-center xl:flex-row gap-10">
@@ -164,11 +170,6 @@ import Grid8 from '../assets/img/grid/grid8.jpeg'
                 <div class="flex items-center gap-5">
                     <Image loading="lazy" src={ChefHat} class="w-10 md:w-12" alt="asd" />
                     <p class="text-xl md:text-2xl font-bold" style="color: #384558">+250 recetas (desayuno, almuerzo, merienda, cena, snack)</p>
-                </div>
-                <div class="flex items-center gap-5">
-                    <Image loading="lazy" src={ChefHat} class="w-10 md:w-12" alt="asd" />
-                    <p class="text-xl md:text-2xl font-bold" style="color: #384558">Descarga del kit completo de AC 
-                    </p>
                 </div>
                 <div class="flex items-center gap-5">
                     <Image loading="lazy" src={ChefHat} class="w-10 md:w-12" alt="asd" />
@@ -379,7 +380,7 @@ import Grid8 from '../assets/img/grid/grid8.jpeg'
 <script>
     const button = document.querySelector('#menu-button') as Element;
     const menuOpen = document.querySelector("#menu-open") as Element;
-
+    const audio = document.getElementById("audio")
     button?.addEventListener("click", () => {
         menuOpen.classList.toggle("hidden");
     });
