@@ -16,7 +16,7 @@ export default function Toast() {
         const interval = setInterval(() => {
             randomName()
             setSelectedName(randomName);
-            toast.success(`${selectedName} ha comprado nuestra receta 🌟🎉`, {duration: 2500})
+            toast.success(`${selectedName} ha comprado nuestro recetario 🌟🎉`, {duration: 2500})
         }, 10000)
 
         return () => clearInterval(interval)
