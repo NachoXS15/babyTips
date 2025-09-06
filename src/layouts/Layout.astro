@@ -17,6 +17,10 @@ import "../styles/global.css";
 		/>
 		<meta name="generator" content={Astro.generator} />
 		<title>BabyTips - Alimentación Complementaria</title>
+		<link rel="stylesheet" href="https://use.typekit.net/fnn8bxf.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<!-- Meta Pixel Code -->
 		<script is:inline>
 			//pixel
@@ -53,11 +57,12 @@ import "../styles/global.css";
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({
 					event_id: eventId,
+					event_name: "PageView",
 					event_source_url: window.location.href,
 				}),
 			});
 
-			//clarify
+			//clarity
 			(function (c, l, a, r, i, t, y) {
 				c[a] =
 					c[a] ||
@@ -88,8 +93,6 @@ import "../styles/global.css";
 </html>
 
 <style>
-	@import url("https://use.typekit.net/fnn8bxf.css");
-	@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
 	html,
 	body {
 		margin: 0;

@@ -1,7 +1,7 @@
 ---
 import Image from "astro/components/Image.astro";
 import Layout from "../layouts/Layout.astro";
-import Books from '../assets/img/books.png'
+import Books from '../assets/img/mockup.webp'
 import ChefHat from '../assets/img/chef_hat.png'
 import BabyIcon from '../assets/img/babyIcon.webp'
 import Start from '../assets/img/start.mp4'
@@ -9,8 +9,11 @@ import logo from '../assets/img/logo.png'
 import Autora from '../assets/img/autora.png'
 import Test1 from '../assets/img/tests/test1.webp'
 import Test2 from '../assets/img/tests/test2.webp'
+import Test5 from '../assets/img/tests/test5.webp'
+import Test6 from '../assets/img/tests/test6.webp'
+import Test7 from '../assets/img/tests/test7.webp'
 import Test3 from '../assets/img/tests/test3.webp'
-import Test4 from '../assets/img/tests/test4.webp'
+// import Test4 from '../assets/img/tests/test4.webp'
 import Pagos from '../assets/img/pagos.webp'
 import Tomo1 from '../assets/img/tomos/tomo1.webp'
 import Tomo2 from '../assets/img/tomos/tomo2.webp'
@@ -86,10 +89,10 @@ import Toast from "../components/Toast";
     </div>
     <!-- Banner -->
     <section id="default-carousel" class="relative w-full">
-        <div class="relative overflow-hidden h-[450px] md:h-[650px]">
-            <div class="slide absolute w-full h-full">
-                <div style={`background-image: url("/index/bg12.webp")`} class="absolute bg-cover bg-center flex items-center justify-center bg-teal-50 min-h-full w-full">
-                    <p class="text-teal-700 bg-white/75 text-center w-4/6 lg:w-1/2 bg-opacity-40 py-7 px-5 md:px-2 md:px-7 text-2xl md:text-4xl text-wrap lg:text-5xl" style="color: #384558; font-family: 'urbana';">La guía definitiva para alimentar a tu bebé sin miedo, sin estrés… y con más de 250 recetas que sí vas a usar.</p>
+        <div class="overflow-hidden h-[550px] md:h-[650px]">
+            <div class="w-full h-full">
+                <div style={`background-image: url("/index/bg12.webp")`} class="bg-cover bg-center flex items-center justify-center bg-teal-50 min-h-full w-full">
+                    <p class="text-teal-700 bg-white/75 text-center w-4/6 lg:w-1/2 bg-opacity-40 py-10 px-5 md:px-7 text-2xl md:text-4xl text-wrap lg:text-5xl" style="color: #384558; font-family: 'urbana';">Recetas simples, deliciosas y caseras para un bebé feliz y bien alimentado</p>
                 </div>
             </div>
         </div>    
@@ -99,91 +102,89 @@ import Toast from "../components/Toast";
         <!-- Fotos -->
         <div class="flex gap-5 flex-col xl:flex-row px-10">
             <div class="w-1/2 xl:w-full flex gap-5">
-                <Image src={Grid1} width={250} alt="asd" />
-                <Image src={Grid2} width={250} alt="asd" />
+                <Image loading="lazy" src={Grid1} width={250} alt="asd" />
+                <Image loading="lazy" src={Grid2} width={250} alt="asd" />
             </div>
             <div class="w-1/2 xl:w-full flex gap-5">
-                <Image src={Grid3} width={250} alt="asd" />
-                <Image src={Grid4} width={250} alt="asd" />
+                <Image loading="lazy" src={Grid3} width={250} alt="asd" />
+                <Image loading="lazy" src={Grid4} width={250} alt="asd" />
             </div>
         </div>
-        <div class="xl:w-3/5 px-10">
-            <div class="text-xl flex flex-col gap-3 font-bold" style="color: #384558">
-                <div class="flex gap-3 md:items-center">
-                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
-                    <span>Todo está en un solo lugar: recetas, menús, tips, organización y más. Para que no pierdas tiempo buscando</span>
+        <div class="mt-5 xl:w-3/5 px-10">
+            <div class="flex flex-col gap-3 font-bold" style="color: #384558">
+                <div class="flex gap-3 items-center">
+                    <Image loading="lazy" src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
+                    <span class="text-md xl:text-xl">Todo está en un solo lugar: recetas, menús, tips, organización y más. Para que no pierdas tiempo buscando</span>
                 </div>
-                <div class="flex gap-3 md:items-center">
-                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
-                    <span>Ideas prácticas y nutritivas para cada día: Desayunos, almuerzos, cenas, snacks y más.</span>
+                <div class="flex gap-3 items-center">
+                    <Image loading="lazy" src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
+                    <span class="text-md xl:text-xl">Ideas prácticas y nutritivas para cada día: Desayunos, almuerzos, cenas, snacks y más.</span>
                 </div>
-                <div class="flex gap-3 md:items-center">
-                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
-                    <span>Guía paso a paso para empezar sin miedo: Qué, cómo y cuándo ofrecer alimentos.</span>
+                <div class="flex gap-3 items-center">
+                    <Image loading="lazy" src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
+                    <span class="text-md xl:text-xl">Guía paso a paso para empezar sin miedo: Qué, cómo y cuándo ofrecer alimentos.</span>
                 </div>
-                <div class="flex gap-3 md:items-center">
-                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
-                    <span>Cómo cortar y preparar alimentos de forma segura para cada etapa, así evitamos el atragantamiento.</span>
+                <div class="flex gap-3 items-center">
+                    <Image loading="lazy" src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
+                    <span class="text-md xl:text-xl">Cómo cortar y preparar alimentos de forma segura para cada etapa, así evitamos el atragantamiento.</span>
                 </div>
-                <div class="flex gap-3 md:items-center">
-                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
-                    <span>Introducción de alimentos alergénicos</span>
+                <div class="flex gap-3 items-center">
+                    <Image loading="lazy" src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
+                    <span class="text-md xl:text-xl">Introducción de alimentos alergénicos</span>
                 </div>
-                <div class="flex gap-3 md:items-center">
-                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
-                    <span>Tips de organización, Batch Cooking y almacenamiento.</span>
+                <div class="flex gap-3 items-center">
+                    <Image loading="lazy" src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
+                    <span class="text-md xl:text-xl">Tips de organización, Batch Cooking y almacenamiento.</span>
                 </div>
-                <div class="flex gap-3 md:items-center">
-                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
-                    <span>Crear menús semanales en minutos con nuestros calendarios.</span>
+                <div class="flex gap-3 items-center">
+                    <Image loading="lazy" src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
+                    <span class="text-md xl:text-xl">Crear menús semanales en minutos con nuestros calendarios.</span>
                 </div>
-                <div class="flex gap-3 md:items-center">
-                    <Image src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
-                    <span>Fomentar la independencia, el disfrute y el vínculo a la hora de comer.</span>
+                <div class="flex gap-3 items-center">
+                    <Image loading="lazy" src={BabyIcon} alt="babyIcon" class="w-12 h-fit" />
+                    <span class="text-md xl:text-xl">Fomentar la independencia, el disfrute y el vínculo a la hora de comer.</span>
                 </div>
             </div>   
         </div>
     </section>
     <!-- Subtitulo -->
     <section class="w-full bg-orange-50 px-10 flex items-center justify-center flex-col gap-5 md:gap-2">
-        <p class="w-full xl:w-3/5 text-white text-center text-3xl" style="font-family: 'urbana'; color: #384558;">Porque tener guardadas 100 recetas en <u>Instagram no sirve de nada si no sabes por dónde empezar</u>.</p>
-        <p class="w-full xl:w-3/5 text-white text-center text-3xl" style="font-family: 'urbana'; color: #384558;">Esta guía te acompaña <u>paso a paso</u>, con recetas probadas, visuales claras y tips que realmente puedes aplicar hoy.</p>
+        <p class="w-full xl:w-3/5 text-white text-center text-3xl" style="font-family: 'urbana'; color: #384558;">Una Guía con +250 recetas prácticas para darle variedad y nutrientes cada día, sin perder tiempo y sin estres en la cocina. Porque alimentar a tu bebé deberia ser simple y placentero.</p>
         <hr class="w-20 border-amber-900 border-2 m-auto my-15" />
+    </section>
+    <!-- Promesa -->
+    <section class="w-full py-10 mb-5 px-10 bg-red-500 text-center">
+        <p class="md:w-3/5 m-auto text-center font-bold text-xl md:text-3xl text-white">APROVECHÁ EL DESCUENTO DEL 50% 🍪💫</p>
     </section>
     <!-- ¿Qué incluye? -->
     <section class="w-full px-10  min-h-fit bg-orange-50 flex items-center justify-center flex-col" id="incluye">
         <div class="w-full xl:w-4/6 flex flex-col items-center xl:flex-row gap-10">
             <article class="w-full md:w-1/2 flex justify-center items-center flex-col">
                 <h3 class="text-3xl md:text-4xl mb-2 text-center text-amber-900 font-bold uppercase">NUESTRO MEGAPACK INCLUYE:</h3>
-                <Image src={Books} alt="libros" />
+                <Image loading="lazy" src={Books} alt="libros" />
                 <hr class="w-10 border-amber-900 border-2 mt-2 block md:hidden" />
-                <TrackedLink eventName="Purchase" href="https://go.hotmart.com/D98863057T?ap=fabc" target="_blank" className="tracking-wider mt-4 text-4xl md:text-4xl text-amber-900 bg-yellow-200 px-5 py-2 md:px-8 md:py-4 rounded-full hover:scale-105 transition">Comprar Ahora</TrackedLink>
+                <TrackedLink eventName="Purchase" href="https://go.hotmart.com/D98863057T?ap=fabc" target="_blank" className="tracking-wider mt-4 text-4xl md:text-4xl text-amber-900 bg-yellow-200 px-5 py-2 md:px-8 md:py-4 rounded-full hover:scale-105 transition">Comienza Ahora</TrackedLink>
             </article>
             <article class="flex flex-col gap-10 md:gap-5 justify-between">
                 <div class="flex items-center gap-5">
-                    <Image src={ChefHat} class="w-10 md:w-12" alt="asd" />
+                    <Image loading="lazy" src={ChefHat} class="w-10 md:w-12" alt="asd" />
                     <p class="text-xl md:text-2xl font-bold" style="color: #384558">+250 recetas (desayuno, almuerzo, merienda, cena, snack)</p>
                 </div>
                 <div class="flex items-center gap-5">
-                    <Image src={ChefHat} class="w-10 md:w-12" alt="asd" />
-                    <p class="text-xl md:text-2xl font-bold" style="color: #384558">Descarga del kit completo de AC 
-                    </p>
-                </div>
-                <div class="flex items-center gap-5">
-                    <Image src={ChefHat} class="w-10 md:w-12" alt="asd" />
+                    <Image loading="lazy" src={ChefHat} class="w-10 md:w-12" alt="asd" />
                     <p class="text-xl md:text-2xl font-bold" style="color: #384558">Acceso a actualizaciones futuras</p>
                 </div>
                 <div class="flex items-center gap-5">
-                    <Image src={ChefHat} class="w-10 md:w-12" alt="asd" />
+                    <Image loading="lazy" src={ChefHat} class="w-10 md:w-12" alt="asd" />
                     <p class="text-xl md:text-2xl font-bold" style="color: #384558">Grupo de apoyo por WhatsApp</p>
                 </div>
                 <div class="flex items-center gap-5">
-                    <Image src={ChefHat} class="w-10 md:w-12" alt="asd" />
+                    <Image loading="lazy" src={ChefHat} class="w-10 md:w-12" alt="asd" />
                     <p class="text-xl md:text-2xl font-bold" style="color: #384558">Carpeta de planes semanales
                     </p>
                 </div>
                 <div class="flex items-center gap-5">
-                    <Image src={ChefHat} class="w-10 md:w-12" alt="asd" />
+                    <Image loading="lazy" src={ChefHat} class="w-10 md:w-12" alt="asd" />
                     <p class="text-xl md:text-2xl font-bold" style="color: #384558">Carpeta de Ideas de comidas</p>
                 </div>
             </article>
@@ -195,38 +196,38 @@ import Toast from "../components/Toast";
         <h2 class="w-full md:w-1/2 text-amber-900 text-center text-4xl xl:text-6xl font-bold" style="font-family: 'urbana'">¡NUESTRO TEMARIO!</h2>
         <div class="w-full xl:w-4/6 flex flex-col">
             <article class="w-full flex flex-col md:flex-row justify-center items-center">
-                <Image src={Tomo1} width={350} alt="tomo1" />
+                <Image loading="lazy" src={Tomo1} width={300} alt="tomo1" />
                 <div class="">
                     <h3 class="text-amber-900 font-bold text-xl md:text-2xl">Tomo I: BLW SIN ESTRÉS</h3>
                     <p class="text-amber-900 font-semibold text-md md:text-xl" style="color: #384558">Descubre el método BLW y siente la confianza de alimentar a tu bebé de manera segura y saludable, contarás con consejos prácticos, tips, trucos, principios principales.</p>
                 </div>
             </article>
             <article class="w-full flex flex-col md:flex-row justify-center items-center">
-                <Image src={Tomo2} width={350} alt="tomo1" />
+                <Image loading="lazy" src={Tomo2} width={300} alt="tomo1" />
                 <div class="">
                     <h3 class="text-amber-900 font-bold text-xl md:text-2xl">TOMO II: CORTES Y TEXTURAS</h3>
                     <p class="text-amber-900 font-semibold text-md md:text-xl" style="color: #384558">Estarás equipado/a con el conocimiento y la confianza necesarios para ofrecer de manera correcta a tu bebé en el corte y texturas de los alimentos (frutas, verduras, cereales y tubérculos, frutos secos, carnes, lácteos, etc.) que va de acuerdo a su mes correspondiente. </p>
                 </div>
             </article>
             <article class="w-full flex flex-col md:flex-row justify-center items-center">
-                <Image src={Tomo3} width={350} alt="tomo1" />
+                <Image loading="lazy" src={Tomo3} width={300} alt="tomo1" />
                 <div class="">
                     <h3 class="text-amber-900 font-bold text-xl md:text-2xl">Tomo III: MENÚ MENSUAL</h3>
                     <p class="text-amber-900 font-semibold text-md md:text-xl" style="color: #384558">Encontrarás 6 planes mensuales detallado y fácil, desde los 6 a 12 meses (desayuno, almuerzo, cena, snack), esto te facilitará cada día al momento de preparar cada comida de tu bebe.</p>
                 </div>
             </article>
             <article class="w-full flex flex-col md:flex-row justify-center items-center">
-                <Image src={Tomo4} width={350} alt="tomo1" />
+                <Image loading="lazy" src={Tomo4} width={300} alt="tomo1" />
                 <div class="">
                     <h3 class="text-amber-900 font-bold text-xl md:text-2xl">Tomo IV: RECETAS</h3>
                     <p class="text-amber-900 font-semibold text-md md:text-xl" style="color: #384558">Encontrarás una colección excepcional de más de 200 recetas diseñadas específicamente para bebés aptos desde los 6 a 12 meses (desayuno, almuerzo, cena y snack)</p>
                 </div>
             </article>
             <article class="w-full flex flex-col md:flex-row justify-center items-center">
-                <Image src={Tomo5} width={350} alt="tomo1" />
+                <Image loading="lazy" src={Tomo5} width={300} alt="tomo1" />
                 <div class="">
                     <h3 class="text-amber-900 font-bold text-xl md:text-2xl">Tomo V: CRECIENDO FUERTES</h3>
-                    <p class="text-amber-900 font-semibold text-md md:text-xl">Encontrarás un glosario de 50 recetas adicionales específicamente formuladas para combatir la anemia y ayudar a tu bebé a aumentar peso</p>
+                    <p class="text-amber-900 font-semibold text-md md:text-xl" style="color: #384558">Encontrarás un glosario de 50 recetas adicionales específicamente formuladas para combatir la anemia y ayudar a tu bebé a aumentar peso</p>
                 </div>
             </article>
         </div>
@@ -237,35 +238,35 @@ import Toast from "../components/Toast";
         <h2 class="text-center text-amber-900 font-bold text-3xl md:text-5xl">5 BONOS ADICIONALES COMPLETAMENTE GRATIS</h2>
         <div class="w-full xl:w-4/6 flex items-center justify-around gap-5 flex-col">
             <article class="w-full flex items-center gap-20 flex-col md:flex-row">
-                <Image src={Calendar} width={250} alt="" />
+                <Image loading="lazy" src={Calendar} width={250} alt="" />
                 <div class="text-amber-900 font-bold">
                     <h3 class="text-3xl bg-orange-100 py-2 px-5 w-fit rounded-2xl">Bono #1: Kit de inicio en la Alimentación Complementaria</h3>
                     <p class="text-md md:text-xl mt-3" style="color: #384558">Tendrás acceso a una colección de plantillas prácticas que simplificarán tu experiencia con el BLW. Desde un calendario de introducción de alimentos hasta la planificación de menús semanales y la elaboración de listas de compras, nuestro planificador te ayudará a organizar y estructurar la alimentación de tu bebé de manera efectiva y saludable.</p>
                 </div>
             </article>
             <article class="w-full flex items-center gap-20 flex-col md:flex-row">
-                <Image src={Canal} width={200} alt="" />
+                <Image loading="lazy" src={Canal} width={200} alt="" />
                 <div class="text-amber-900 font-bold">
                     <h3 class="text-3xl bg-orange-100 py-2 px-5 w-fit rounded-2xl">Bono #2: Grupo de apoyo</h3>
                     <p class="text-md md:text-xl mt-3" style="color: #384558">Tendrás acceso a mi Grupo de apoyo, donde podrás resolver tus dudas, compartir tus experiencias con mamis que están dentro de este proceso de la alimentación complementaria..</p>
                 </div>
             </article>
             <article class="w-full flex items-center gap-20 flex-col md:flex-row">
-                <Image src={Canal} width={200} alt="" />
+                <Image loading="lazy" src={menu} width={200} alt="" />
                 <div class="text-amber-900 font-bold">
                     <h3 class="text-3xl bg-orange-100 py-2 px-5 w-fit rounded-2xl">Bono #3: Carpeta de menus semanales</h3>
                     <p class="text-md md:text-xl mt-3" style="color: #384558">Tendrás acceso a una carpeta de planes semanales listos para preparar y ahorrarte tiempo, encontrarás comidas variadas y fáciles.</p>
                 </div>
             </article>
             <article class="w-full flex items-center gap-20 flex-col md:flex-row">
-                <Image src={Canal} width={200} alt="" />
+                <Image loading="lazy" src={ideas} width={200} alt="" />
                 <div class="text-amber-900 font-bold">
                     <h3 class="text-3xl bg-orange-100 py-2 px-5 w-fit rounded-2xl">Bono #4: Carpeta de ideas de comida</h3>
                     <p class="text-md md:text-xl mt-3" style="color: #384558">Tendrás acceso a una carpeta de platos diversos, con presentaciones en fotos para visualizar las comidas, esto te facilitará tu día y puedas brindar a tu bebé.</p>
                 </div>
             </article>
             <article class="w-full flex items-center gap-20 flex-col md:flex-row">
-                <Image src={Canal} width={200} alt="" />
+                <Image loading="lazy" src={claves} width={200} alt="" />
                 <div class="text-amber-900 font-bold">
                     <h3 class="text-3xl bg-orange-100 py-2 px-5 w-fit rounded-2xl">Bono #5: Ebook - Mi bebé no come</h3>
                     <p class="text-md md:text-xl mt-3" style="color: #384558">Este ebook está diseñado para mamás que enfrentan la etapa en la que su bebé rechaza la comida por diferentes razones. Aquí descubrirá las posibles causas y estrategias efectivas para hacer de la alimentación un momento tranquilo y positivo.</p>
@@ -281,12 +282,16 @@ import Toast from "../components/Toast";
         <p class="text-md md:text-xl text-center font-bold" style="color: #384558">Un sin número de mamitas están obteniendo resultados sorprendentes con nuestra guía completa del Método BLW</p>
         <div class="flex gap-5 flex-col md:flex-row p-10">
             <div class="w-full flex flex-col gap-5">
-                <Image src={Test1} width={400} alt="asd" />
-                <Image src={Test2} width={400} alt="asd" />
+                <Image loading="lazy" src={Test1} width={400} alt="asd" />
+                <Image loading="lazy" src={Test5} width={400} alt="asd" />
             </div>
             <div class="w-full flex flex-col gap-5">
-                <Image src={Test3} width={400} alt="asd" />
-                <Image src={Test4} width={400} alt="asd" />
+                <Image loading="lazy" src={Test2} width={400} alt="asd" />
+                <Image loading="lazy" src={Test6} width={400} alt="asd" />
+            </div>
+            <div class="w-full flex flex-col gap-5">
+                <Image loading="lazy" src={Test3} width={400} alt="asd" />
+                <Image loading="lazy" src={Test7} width={400} alt="asd" />
             </div>
         </div>
         <!-- <div class="mt-5 md:w-4/6 gap-y-4 lg:gap-6 columns-2 lg:columns-3 xl:columns-4">
@@ -296,13 +301,31 @@ import Toast from "../components/Toast";
         </div> -->
     </section>
     <!-- Promesa -->
-    <section class="w-full py-5 px-10 bg-teal-700 text-center">
-        <p class="md:w-3/5 m-auto text-center font-bold text-xl md:text-3xl text-white">Este no es solo un recetario. Es la tranquilidad de saber que estás alimentando con consciencia, amor y propósito.</p>
+    <section class="w-full p-10  bg-teal-700 text-center">
+        <p class="md:w-3/5 m-auto text-white text-center font-bold text-3xl tracking-wide md:text-5xl" style="font-family: 'urbana'">UN SOLO Y ÚNICO PAGO PARA TODA LA <br>VIDA, SIN COBROS POSTERIORES Y PARA SIEMPRE.</p>
+    </section>
+    <!-- Pago -->
+    <section class="w-full h-fit flex justify-center items-center py-10 px-10 bg-orange-200">
+        <div class="w-full xl:w-4/6 flex flex-col items-center md:flex-row gap-10">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-amber-900 text-4xl md:text-6xl text-center">MEGA PACK + BONOS + 50% DESCUENTO</h2>
+                <Image loading="lazy" src={Books} width={800} alt="" />
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col items-center">
+                <div class="mb-10 flex items-center justify-center flex-col">
+                    <span class="text-amber-900 text-4xl mb-2 line-through font-bold">$36.99 USD</span>
+                    <span class="text-amber-900 text-6xl md:text-8xl font-bold text-center">$18.99 USD</span>
+                    <p class="text-center mt-5" style="color: #384558">Se convierte automáticamente en tu moneda oficial de tu pais</p>
+                </div>
+                <TrackedLink eventName="Purchase" href="https://go.hotmart.com/D98863057T?ap=fabc" target="_blank" className="tracking-wider text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comienza Ahora</TrackedLink>
+                <!-- <Image class="mt-10" src={Pagos} alt="asd" /> -->
+            </div>
+        </div>
     </section>
     <!-- Autora -->
     <section class="w-full min-h-fit pt-20 px-10 flex items-center flex-col bg-orange-50 justify-center" id="autora">
         <div class="w-full xl:w-4/6 px-5 flex items-center justify-center flex-col xl:flex-row gap-8 md:gap-20">
-            <Image src={Autora} class="w-44 md:w-56" alt="" />
+            <Image loading="lazy" src={Autora} class="w-44 md:w-56" alt="" />
             <div class="w-full xl:w-4/5">
                 <h2 class="text-amber-900 text-3xl md:text-5xl mb-6">Hola, soy Aracely Upiachihua</h2>
                 <p class="text-md md:text-xl mb-5" style="color: #384558">Mamá y autora de "Chef Mom: Mamá de Gio".</p>
@@ -335,31 +358,16 @@ import Toast from "../components/Toast";
             </article>
         </div>
     </section>
-    <section class="w-full py-5 px-10 bg-yellow-200 text-center">
-        <p class="md:w-3/5 m-auto text-center font-bold text-xl md:text-3xl text-white" style="color: #384558">Una inversión mínima, para una transfomación total en la almentación de tu bebé.</p>
+    <section class="w-full py-10 px-10 bg-yellow-200 text-center h-fit">
+        <p class="md:w-3/5 m-auto text-center font-bold text-xl md:text-3xl text-white mb-15" style="color: #384558">Una inversión mínima, para una transfomación total en la almentación de tu bebé.</p>
+        <TrackedLink eventName="Purchase" href="https://go.hotmart.com/D98863057T?ap=fabc" target="_blank" className="tracking-wider text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl mt-10 text-amber-900 bg-yellow-100 px-10 py-5 rounded-full hover:scale-105 transition">Quiero mi Recetario</TrackedLink>
     </section>
-    <!-- Pago -->
-    <section class="w-full h-fit flex justify-center items-center py-10 px-10 bg-orange-200">
-        <div class="w-full xl:w-4/6 flex flex-col items-center md:flex-row gap-10">
-            <div class="w-full md:w-1/2">
-                <h2 class="text-amber-900 text-4xl md:text-6xl text-center">MEGA PACK + BONOS + 50% DESCUENTO</h2>
-                <Image src={Books} alt="" />
-            </div>
-            <div class="w-full md:w-1/2 flex flex-col items-center">
-                <div class="mb-10 flex items-center justify-center flex-col">
-                    <span class="text-amber-900 text-4xl mb-2 line-through font-bold">$36.99 USD</span>
-                    <span class="text-amber-900 text-6xl md:text-8xl font-bold text-center">$18.99 USD</span>
-                    <p class="text-center mt-5" style="color: #384558">Se convierte automáticamente en tu moneda oficial de tu pais</p>
-                </div>
-                <TrackedLink eventName="Purchase" href="https://go.hotmart.com/D98863057T?ap=fabc" target="_blank" className="tracking-wider text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl text-amber-900 bg-yellow-200 px-10 py-5 rounded-full hover:scale-105 transition">Comprar Ahora</TrackedLink>
-                <!-- <Image class="mt-10" src={Pagos} alt="asd" /> -->
-            </div>
-        </div>
-    </section>
+    
     <!-- Final -->
     <footer class="w-full py-5 px-10 bg-orange-200 text-center">
         <hr class="w-20 border-amber-900 border-2 m-auto my-5" />
-        <p style="color: #384558; font-family: 'urbana';" class="text-2xl">&copy Baby Tips 2025</p>
+        <p style="color: #384558; font-family: 'urbana';" class="text-xl md:text-2xl w-full md:w-3/5 m-auto text-center">Este sitio no es parte del sitio web de Facebook o Facebook Inc. Adicionalmente, este sitio no está respaldado por Facebook de ninguna manera. FACEBOOK es una marca registrada de Facebook, Inc.</p>
+        <p style="color: #384558; font-family: 'urbana';" class="text-xl md:text-2xl text-center mt-8">2025 | BabyTips | &copy TODOS LOS DERECHOS RESERVADOS.</p>
     </footer>
 </Layout>
 
@@ -372,7 +380,7 @@ import Toast from "../components/Toast";
 <script>
     const button = document.querySelector('#menu-button') as Element;
     const menuOpen = document.querySelector("#menu-open") as Element;
-
+    const audio = document.getElementById("audio")
     button?.addEventListener("click", () => {
         menuOpen.classList.toggle("hidden");
     });
